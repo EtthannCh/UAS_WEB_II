@@ -271,7 +271,8 @@ function insertToTransaksi($status, $kode_transaksi)
 function findAllTransaksi()
 {
     global $conn;
-    $query = $conn->prepare("SELECT * from tbl_transaksi");
+    $query = $conn->prepare("SELECT *, tbl_data_user.nama_depan, tbl_data_user.nama_belakang from tbl_transaksi 
+    JOIN tbl_data_user ON tbl_transaksi.id_user =tbl_data_user.id_user");
     $query->execute();
     return $query->fetchAll();
 }
