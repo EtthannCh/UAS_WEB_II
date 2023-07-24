@@ -215,7 +215,7 @@ function updateCart($qty, $Nama)
 function hapusBarangCart($id)
 {
     global $conn;
-    $query = $conn->prepare("DELETE FROM tbl_cart where id_produk = :id_produk");
+    $query = $conn->prepare("DELETE FROM tbl_cart where kode_produk = :id_produk");
     $query->bindParam(":id_produk", $id, PDO::PARAM_STR);
     return $query->execute();
 }
