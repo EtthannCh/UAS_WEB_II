@@ -3,12 +3,12 @@ include_once "../signup/config.php";
 function TambahData($id, $id_produk, $nama, $qty, $harga, $gambar)
 {
     global $conn;
-    $query = $conn->prepare("INSERT INTO tbl_cart (id_user, id_produk, nama_produk, qty_produk, harga_produk, gambar_produk, total_harga ,pengiriman) 
- VALUES (:id_user ,:id_produk, :Nama, :qty, :harga, :gambar, :total ,'a')");
+    $query = $conn->prepare("INSERT INTO tbl_cart (id_user, kode_produk, nama_produk, qty_produk, harga_produk, gambar_produk, total_harga ,pengiriman) 
+ VALUES (:id_user ,:kode_produk, :Nama, :qty, :harga, :gambar, :total ,'a')");
     return $query->execute(
         array(
             "id_user" => $id,
-            "id_produk" => $id_produk,
+            "kode_produk" => $id_produk,
             "Nama" => $nama,
             "qty" => $qty,
             "harga" => $harga,
