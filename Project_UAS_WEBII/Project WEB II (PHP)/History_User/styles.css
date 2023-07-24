@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d3d3d3;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.wrapper {
+    margin: 0 20px;
+}
+
+.wrapper .info {
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px 0px;
+    border-radius: 10px;
+}
+
+.info .btn-group label{
+    margin: 0 90px;
+    border: none;
+    color: #000;
+}
+
+.wrapper ul {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.info ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.info ul li a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .listProduk {
+    max-height: 45rem;
+    overflow-y: scroll;
+    width: 100%;
+    background-color: #f5f5f5;
+    list-style-type: none;
+    padding: 30px 100px;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.wrapper .listProduk .produk {
+    /* border-bottom: 2px solid black; */
+}
+
+.listProduk .produk .headerProduk {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.headerProduk h1 {
+    margin-right: 50px;
+}
+
+.listProduk .produk .bodyProduk {
+    margin-top: 20px;
+}
+
+.listProduk .produk .bodyProduk .containerProduk {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid grey;
+}
+
+.productWrapper .statusPengiriman {
+    margin-top: 20px;
+    gap: 15px;
+    align-items: center;
+    display: flex;
+}
+
+.statusPengiriman p {
+    position: relative;
+    bottom: -7px;
+}
+
+.productWrapper .status {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.status a {
+    text-decoration: none;
+    color: grey;
+}
+
+.bodyProduk .ketProduk {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.ketProduk img {
+    border-radius: 100%;
+    border: 1px solid black;
+}

@@ -1,0 +1,198 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 110vh;
+    /* justify-content: right; */
+    align-items: center ;
+    background: linear-gradient(#fff,#000);
+    text-align: right;
+    margin: 0;
+    background-size: cover;
+}
+.login {
+    position: relative;
+    width: 100%;
+    padding: 13px;
+    margin-top: 10px;
+    background-color: rgb(247, 248, 250);
+    color: rgb(6, 6, 6);
+    transition: 0.3s;
+    font-size: 1.0rem;
+    border: 3px solid rgb(74, 74, 83);
+}
+
+.login:hover {
+    background-color: transparent;
+    color: rgb(251, 250, 250);
+}
+
+
+.box {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    z-index: 10;
+    padding: 50px 40px;
+    margin-top: 70px;
+    background-color: black;
+    background-size: cover;
+}
+
+.form{
+    width: 100%;
+    color: #fff;
+}
+
+.form a {
+    color: rgb(255, 253, 253);
+}
+
+.form a:hover {
+    color: grey;
+}
+
+.inputBox {
+    position: relative;
+    margin-top: 50px;
+
+    width: 100%;
+
+}
+
+.inputBox input {
+    width: 100%;
+    padding: 10px 10px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.inputBox span {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    transition: 0.3s;
+}
+
+.inputBox input:valid~span,
+.inputBox input:focus~span {
+    color: grey;
+    transform: translateY(-30px);
+    font-size: 13px;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+.inputBox i {
+    width: 100%;
+    position: absolute;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 250, 250);
+}
+
+.inputBox input:valid~i,
+.inputBox input:focus~i {
+    background-color: rgb(255, 254, 254);
+}
+
+.forget:hover {
+    color: grey;
+}
+
+.tnc{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.social-media {
+    text-align: center;
+}
+
+.social-media-icons {
+    margin-top: 15px;
+    font-size: 2.5rem;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.Or {
+    margin-top: 15px;
+    display: flex;
+    color: grey;
+    font-size: 0.8rem;
+}
+
+.Or::before, .Or::after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid;
+    margin: auto;
+}
+
+.Or::before {
+    margin-right: 10px;
+}
+
+.Or::after {
+    margin-left: 10px;
+}
+
+.signup {
+    position: absolute;
+    margin-top: 30px;
+    left: 35%;
+    color: rgb(238, 236, 236);
+    font-weight: bold;
+}
+
+nav {
+    background-color: #000;
+    width: 100%;
+  }
+  
+  nav a {
+    display: block;
+    color: #fff;
+    padding: 30px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  nav a:hover {
+    background-color: transparent;
+  }
+@media screen and (max-width:900px){
+    nav {
+        background-color: #000;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        z-index: 2;
+        display: block;
+      }
+
+    .box {
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        background-color: rgb(255, 255, 255);
+        overflow: hidden;
+        z-index: 2;
+        /* align-items: center; */
+        text-align: center;
+        left: 17%;
+        margin-top: 158px;
+        background-color: #000;
+        background-size: cover;
+    }
+    
+
+}

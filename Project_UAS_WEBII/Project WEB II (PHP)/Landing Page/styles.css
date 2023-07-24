@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+body {
+    /* height: 100vh; */
+    overflow-x: hidden;
+}
+
+.wrapper {
+    /* background-color: #3A1078; */
+    color: #000;
+}
+
+/* .container-fluid .navbar-brand {
+    /* padding: 0 5%; */
+/* color: #fff;
+    transition: 0.3s all ease;
+} */
+*/ .wrappers {
+    overflow: hidden;
+    position: relative;
+}
+
+.container-scrollx {
+    position: relative;
+    display: flex;
+    width: 300vw;
+}
+
+.wrappers .h2-features {
+    display: flex;
+    /* padding-left: 15.5%; */
+    padding-top: 20px;
+}
+
+.scroll-section {
+    width: 100vw;
+    padding: 20vw 10vw;
+    height: 50vh;
+}
+
+.scroll-section span {
+    text-align: justify;
+    /* display: flex; */
+    line-height: 1.5;
+    font-size: 30px;
+}
+
+.container-fluid .navbar-brand:hover {
+    color: #3795BD;
+}
+
+.d-flex {
+    position: relative;
+    margin-right: 170px;
+}
+
+.d-flex .form-control {
+    border-radius: 150px;
+    width: 300px;
+    height: 33px;
+    padding: 0 20px;
+    margin-right: 50px;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#home {
+    /* position: relative; */
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    /* padding-bottom: 70%; */
+}
+
+.container {
+    width: 100%;
+}
+
+.container-bg {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    /* background-image: url('img/img1.jpg'); */
+    background-position: left;
+    background-size: cover;
+    object-fit: cover;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    position: absolute;
+    /* padding: 0;
+    margin: 0; */
+}
+
+.parallax-content {
+    position: absolute;
+    top: 50%;
+    right: 35%;
+    margin: 0 auto;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #EB455F;
+    z-index: 1;
+    transition: 0.5s all ease;
+    overflow: hidden;
+}
+
+#home .container .parallax-content h1 {
+    /* position: absolute; */
+    color: grey;
+    /* background-color: red; */
+    transition: 0.5s all ease-in-out;
+    font-size: 60px;
+    overflow: hidden;
+    z-index: 1;
+    color: #000;
+    opacity: 0.5;
+}
+
+.fade-in {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fade-in .btn {
+    /* position: absolute; */
+    display: inline-flex;
+    overflow: hidden;
+    z-index: 3;
+    top: 50px;
+    left: 50px;
+    cursor: auto;
+    margin: 0 15px;
+    background-color: #000;
+    font-weight: 900;
+    color: #fff;
+    border: none;
+}
+
+.fade-in .btn:hover {
+    cursor: pointer;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transition: all 0.3s ease-out;
+    overflow: hidden;
+}
+
+#features {
+    position: relative;
+    padding: 100px 15%;
+    color: #fff;
+    overflow: hidden;
+    z-index: 10;
+    background-color: #000;
+}
+
+#features h2 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    /* color: #2F58CD; */
+}
+
+.container-features {
+    display: flex;
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.container-features.active {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 1s ease-in;
+}
+
+.features-content {
+    text-align: center;
+    width: 1500px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.features-content p {
+    text-align: center;
+}
+
+.features-content .row .col {
+    width: 350px;
+}
+
+.features-content .row .col:nth-child(1),
+.features-content .row .col:nth-child(2) {
+    border-right: 0.1px solid grey;
+}
+
+.wrapper .wrappers .container-scrollx .h2-features h2 {
+    margin-left: 670px;
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.hr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .hr hr {
+    border: none;
+    /* border-width: 5px; */
+    border-top-style: dotted;
+    width: 3%;
+    height: 0px;
+    position: relative;
+    z-index: 3;
+    color: #333;
+    scale: 1.5;
+}
+
+textarea::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (max-width:900px) {
+    .navbar {
+        background-color: #000;
+    }
+
+    .navbar-nav {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-nav .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px 0px;
+        color: #898284;
+        border-color: #898284;
+    }
+
+    .navbar-nav .nav-item a {
+        color: grey;
+    }
+
+    .collapse .d-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .collapse .d-flex .form-control {
+        margin-top: 50px;
+        right: 9%;
+        position: absolute;
+        text-align: center;
+    }
+
+    .search-wrapper {
+        border-top-right-radius: 150px;
+        border-bottom-right-radius: 150px;
+        width: 50px;
+        height: 33px;
+        position: absolute;
+        right: 32%;
+        bottom: -340%;
+        background: #333;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .search-wrapper i {
+        position: absolute;
+        right: 20px;
+        top: 7px;
+    }
+
+    .parallax-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1000px;
+    }
+
+    .container-bg {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        /* background-image: url('img/img1.jpg'); */
+        background-position: center;
+        background-size: cover;
+        object-fit: fill;
+        z-index: 1;
+        top: 0;
+        /* left: 0;  */
+        position: absolute;
+    }
+
+    .wrappers {
+        overflow: hidden;
+    }
+
+    #more {
+        z-index: 5;
+    }
+
+}

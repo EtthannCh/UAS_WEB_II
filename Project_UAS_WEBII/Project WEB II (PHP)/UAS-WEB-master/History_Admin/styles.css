@@ -1,0 +1,122 @@
+body {
+    background-color: #d3d3d3;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.wrapper-2 {
+    margin-left: 250px;
+}
+
+.sidebar {
+    background-color: #000;
+    height: 100vh;
+    margin-right: 10px;
+}
+
+.sidebar button {
+    color: #fff;
+}
+
+.collapse ul li a {
+    padding-left: 10px;
+    color: #fff;
+}
+
+#account-collapse ul li a {
+    color: #fff;
+}
+
+.wrapper-2 {
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper-2 .info {
+    display: flex;
+    width: 600px;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    margin: 20px 0px;
+    /* background-color: #fff; */
+    /* padding: 10px 0px; */
+    border-radius: 10px;
+}
+
+.list-group a {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.info .btn-group label {
+    color: #000;
+    border-color: #000;
+}
+
+.wrapper-2 header .container {
+    display: flex;
+    gap: 500px;
+}
+
+.wrapper-2 .rekapPesanan {
+    width: 1100px;
+}
+
+.rekapPesanan .navRekap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navRekap .navRekap_1 .navRekap_header {
+    padding: 10px;
+}
+
+.navRekap_1 .navRekap_header tr td h2 {
+    margin-right: 317px;
+}
+
+.navRekap_1 .navRekap_header tr td:first-child {
+    padding: 0 50px;
+}
+
+.navRekap_1 .navRekap_header tr:first-child td {
+    font-weight: bolder;
+    font-size: 18px;
+    padding: 0 30px;
+}
+
+.navRekap_1 .navRekap_header tr td {
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.navRekap_header tr .editStatus {
+    display: flex;
+}
+
+@media screen and (max-width:980px) {
+    .wrapper-2 header .container {
+        position: relative;
+        align-items: center;
+        gap: 0px;
+    }
+
+    header .container .feature_div .feature li {
+        display: flex;
+        flex-direction: row;
+        /* background-color: black; */
+    }
+
+    header .container .form-control {
+        width: 200px;
+    }
+}

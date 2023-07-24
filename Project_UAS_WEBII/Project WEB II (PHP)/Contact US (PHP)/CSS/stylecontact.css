@@ -1,0 +1,268 @@
+*{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo a{
+    padding-left: 70px !important;
+}
+
+.hero .hero-container{
+    background-color: #398394;
+    background-size: cover;
+    width: 100%;
+    height: 530px;
+}
+
+.hero .hero-container h1{
+    padding-top: 75px;
+    padding-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 34px;
+}
+
+.hero .hero-container .grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0;
+}
+
+.hero-container .grid-container .circle-circle1{
+    margin-left: 130px;
+    margin-right: 10px;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.hero-container .grid-container .circle-circle1 img{
+    width: 145px;
+    padding-top: 45px;
+    padding-left: 40px;
+    filter: invert(0%) sepia(0%) saturate(7500%) hue-rotate(295deg) brightness(87%) contrast(102%);
+}
+
+.hero-container .grid-container .circle-circle2{
+    margin-left: 80px;
+    margin-right: 10px;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.hero-container .grid-container .circle-circle2 img{
+    width: 150px;
+    padding-top: 45px;
+    padding-left: 45px;
+    filter: none;
+}
+
+.hero-container .grid-container .circle-circle3{
+    margin-left: 60px;
+    margin-right: 130px;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.hero-container .grid-container .circle-circle3 img{
+    width: 150px;
+    padding-top: 45px;
+    padding-left: 45px;
+    filter: invert(14%) sepia(88%) saturate(6133%) hue-rotate(360deg) brightness(106%) contrast(119%);;
+}
+
+.hero-container .grid-container h2{
+    margin-top: 60px;
+    text-align: center;
+    color: white;
+    font-weight: 550;
+}
+
+.hero-container .grid-container .info{
+    display: flex;
+    text-align: center;
+    font-size: 13px;
+    color: #163e47;
+    font-weight: 550;
+}
+
+.hero-container .grid-container .circle-circle1 .c1{
+    padding-top: 11px;
+    padding-left: 26px;
+    width: 50px;
+    filter: invert(87%) sepia(99%) saturate(6%) hue-rotate(270deg) brightness(111%) contrast(97%);
+}
+
+.hero-container .grid-container .circle-circle2 .c2{
+    padding-top: 30px;
+    padding-left: 65px;
+    width: 89px;
+    filter: invert(87%) sepia(99%) saturate(6%) hue-rotate(270deg) brightness(111%) contrast(97%);
+}
+
+.hero-container .grid-container .circle-circle3 .c3{
+    padding-top: 10px;
+    padding-left: 28px;
+    width: 52px;
+    filter: invert(87%) sepia(99%) saturate(6%) hue-rotate(270deg) brightness(111%) contrast(97%);
+}
+
+.hero-container .grid-container .time{
+    color: white;
+    padding-left: 12px;
+    vertical-align: 0.5em;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.body-2{
+    height: 500px;
+}
+
+.body-2 h1{
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.body-2 .grid-form{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    grid-gap: 0;
+}
+
+.body-2 form{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin-top: 20px;
+    margin-left: 150px;
+}
+  
+.body-2 form label {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+  
+.body-2 form input, textarea {
+    margin-left: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #94c3ce;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    resize: vertical;
+    font-size: 13px;
+    width: 500px;
+    resize: none;
+}
+  
+.body-2 form button[type="submit"]{
+    margin-top: 30px;
+    padding: 10px;
+    margin-left: 0px;
+    margin-right: 380px;
+    border-radius: 25px;
+    background-color: white;
+    border: 1.5px solid #71959D;
+    color: #056C83;
+    font-weight: 550;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.body-2 form button[type="submit"]:hover{
+    background-color: #056C83;
+    color: white;
+}
+  
+.body-2 .grid-form .add-box{
+    margin-top: 60px;
+    margin-left: 175px;
+    margin-right: 0;
+    width: 250px;
+    height: 200px;
+    background-color: #317685;
+    box-shadow: 0 2px 4px rgba(0, 28, 35, 0.6);
+}
+
+.add-box .fb-info{
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.add-box .fb-info img{
+    background-color: white;
+    border-radius: 50%;
+    width: 25px;
+}
+
+.add-box .tw-info{
+    padding-top: 8px;
+    padding-left: 25px;
+}
+
+
+.add-box .tw-info img{
+    width: 40px;
+}
+
+.add-box .ig-info{
+    padding-top: 4px;
+    padding-left: 28px;
+}
+
+.add-box .ig-info img{
+    width: 30px;
+}
+
+.add-box .mail-info{
+    padding-top: 14px;
+    padding-left: 25px;
+}
+
+.add-box .mail-info img{
+    width: 35px;
+}
+
+.add-box span{
+    display: inline-block;
+    padding-left: 20px;
+    vertical-align: 0.5em;
+    color: white;
+    font-size: 12px;
+}
+
+.add-box .tw-info span{
+    display: inline-block;
+    padding-left: 9px;
+    vertical-align: 1.2em;
+}
+
+.add-box .ig-info span{
+    padding-left: 14px;
+    vertical-align: 0.7em;
+}
+
+.add-box .mail-info span{
+    padding-left: 12px;
+    vertical-align: 0.5em;
+}

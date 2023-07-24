@@ -1,0 +1,186 @@
+*{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+a { 
+    text-decoration:none !important;
+}
+
+.hero .hero-container{
+    width: 100%;
+    height: 600px;
+}
+
+.hero h2{
+    padding-top: 80px;
+    padding-left: 38%;
+    font-weight: 600;
+    color: black;
+}
+
+.hero .container .circle1{
+    position: relative;
+    margin-left: 280px;
+    margin-top: 30px;
+    width: 60px;
+    height: 40px;
+    border-style: solid;
+    border-color:  rgb(255, 0, 0);
+    border-radius: 50%;
+    background-color: red;
+    transform: rotate(345deg);
+    z-index: 2;
+}
+
+.hero .container .circle1 h5{
+    color: white;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.hero .box-promote1{
+    position: absolute;
+    box-shadow: 1px 2px rgba(155, 155, 155, 0.8);
+    margin-top: 50px;
+    margin-left: 20%;
+    width: 250px; 
+    height: 250px;
+    border-style: solid;
+    border-color:rgb(145, 145, 145);
+    border-width: 0.5px;
+}
+
+.hero .container .circle2{
+    position: relative;
+    margin-right: 430px;
+    margin-top: 30px;
+    width: 60px;
+    height: 40px;
+    border-style: solid;
+    border-color:  rgb(255, 0, 0);
+    border-radius: 50%;
+    background-color: red;
+    transform: rotate(345deg);
+    z-index: 2;
+}
+
+.hero .container .circle2 h5{
+    color: white;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.hero .box-promote2{
+    position: absolute;
+    box-shadow: 1px 2px rgba(155, 155, 155, 0.8);
+    margin-top: 50px;
+    margin-left: 60%;
+    width: 250px; 
+    height: 250px;
+    border-style: solid;
+    border-color: rgb(145, 145, 145);
+    border-width: 0.5px;
+}
+
+.hero .box-promote1 img.product1, img.product2{
+    width: 230px;
+    padding-left: 25px;
+    padding-top: 50px;
+}
+
+.hero .container .box-promote1 h5{
+    margin-top: 40px;
+    margin-left: 90px;
+}
+
+.hero .container .box-promote2 h5{
+    margin-top: 50px;
+    margin-left: 115px;
+}
+
+.hero .container .box-promote1 p.tipe1, .box-promote2 p.tipe1{
+    font-size: 12px;
+    font-weight: 100;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.hero .container .box-promote1 sup{
+    font-size: 7px;
+}
+
+.hero .container .box-promote1 p.tipe2, .box-promote2 p.tipe2{
+    font-size: 11px;
+    color: rgb(75, 75, 75);
+    padding-left: 75px;
+}
+
+.hero .container .box-promote1 p.price, .box-promote2 p.price{
+    color:red;
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 60px;
+    margin-bottom: 8px;
+}
+
+.hero .container .box-promote1 a, .box-promote2 a{
+    color: red;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 62px;
+    padding: 3px 15px;
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 30px;
+}
+
+.hero .container .box-promote1 a:hover, .box-promote2 a:hover{
+    color: white;
+    background-color: red;
+}
+
+.body2{
+    background-image: linear-gradient(black, #404345);
+    width: 100%;
+    height: 850px;
+}
+
+.body2 h1{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.body2 .grid-container{
+    margin-top: 20px;
+    margin-left: 8%;
+    margin-right: 8%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 60px;
+}
+
+.body2 .grid-container .grid-item img{
+    margin-left: 25px;
+    width: 170px;
+    height: 150px;
+    background-color: white;
+}
+
+.body2 .grid-container .grid-item a{
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
