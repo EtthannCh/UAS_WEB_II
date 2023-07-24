@@ -235,7 +235,7 @@ function hapusKontak($id)
 function updateQtyCart($jumlah, $id, $pengiriman)
 {
     global $conn;
-    $query = $conn->prepare("UPDATE tbl_cart SET qty_produk = :qty, total_harga = qty_produk * harga_produk, pengiriman = :pengiriman WHERE id_produk =:id_produk");
+    $query = $conn->prepare("UPDATE tbl_cart SET qty_produk = :qty, total_harga = qty_produk * harga_produk, pengiriman = :pengiriman WHERE kode_produk =:id_produk");
     return $query->execute(
         array(
             "qty" => $jumlah,
