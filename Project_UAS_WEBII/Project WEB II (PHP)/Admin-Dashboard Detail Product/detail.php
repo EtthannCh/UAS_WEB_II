@@ -199,8 +199,8 @@ include_once "lib.php"; ?>
                   echo "<p>" . $explode_deskripsi[$i] . "</p>";
                 }
                 echo "</td>";
-                echo "<td>" . $data["harga_awal"] . "</td>";
-                echo "<td>" . $data["diskon"] . "</td>";
+                echo "<td>" . convertToRupiah($data["harga_awal"]) . "</td>";
+                echo "<td>" . convertToRupiah($data["diskon"]) . "</td>";
                 echo "<td>" . $data["jumlah_produk"] . "</td>";
                 echo "<td> <img src='gambar/$imgSrc' width='100px' height='100px'></td>";
                 echo "<td><button class='btn btn-danger btn-md'><a href='form-edit.php?id=" . $id . "'>EDIT</a></button></td>";
