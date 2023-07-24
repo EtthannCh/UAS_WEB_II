@@ -51,14 +51,14 @@ include_once "lib.php"; ?>
                                 $jlh_produk = count($nama_produk1);
                                 echo "<tr>";
                                 echo "<td>" . $data["kode_transaksi"] . "</td>";
-                                echo "<td>" . $data["id_user"] . "</td>";
+                                echo "<td>" . $data["nama_depan"] . $data["nama_belakang"] ."</td>";
                                 echo "<td>";
                                 for ($i = 0; $i < $jlh_produk; $i++) {
                                     echo "<p>" . $nama_produk1[$i] . "</p>";
                                 }
                                 echo "</td>";
                                 echo "<td>" . $data["jumlah_produk"] . "</td>";
-                                echo "<td>" . $data["harga"] . "</td>";
+                                echo "<td>" . convertToRupiah($data["harga"]) . "</td>";
                                 echo "<td>" . $data["pengiriman"] . "</td>";
                                 echo "<td>" . $data["status_transaksi"] . "</td>";
                                 echo "<td><a href='form-edit-pengiriman.php?id=$kode_transaksi'>Edit</a></td>";
