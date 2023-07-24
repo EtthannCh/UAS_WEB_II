@@ -103,7 +103,6 @@ include_once "../lib.php";
                 let text = $(this).text();
                 // document.cookie = "status = " + text;
                 $.post("save_data.php", { status: text }, function (data) {
-                    alert(data);
                 });
             })
         })
