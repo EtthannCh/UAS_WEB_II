@@ -76,7 +76,7 @@ if(cekLogin()){
             $total = 0;
             foreach ($data as $value) {
                 $namaProduk = $value["nama_produk"];
-                echo $id_produk = $value["kode_produk"];
+                $id_produk = $value["kode_produk"];
                 echo "<div class='barang'>";
                 echo "<div class='desc-barang'>";
                 echo "<img src='../Log in/Image/11Kg Mesin Cuci dengan QuickDrive.jpg' class='gmbr-produk' width='100px' height='100px'>";
@@ -290,7 +290,6 @@ if(cekLogin()){
             document.cookie = "id_produk = " + id;
             document.cookie = "action = " + action;
             $.post("save_data.php", {}, function (aksi) {
-                alert(aksi);
             }).fail(function (err) {
                 console.error("err");
             })
