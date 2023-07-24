@@ -50,12 +50,12 @@ include_once "../lib.php"; ?>
                     value="<?php echo $data_barang["nama_produk"] ?>">
             </div>
             <div class="mb-3">
-                <label class="form-label">ID KATEGORI</label>
+                <label class="form-label">Id Kategori</label>
                 <input type="text" class="form-control" name="id_kategori"
                     value="<?php echo $data_barang["id_kategori"] ?>">
             </div>
             <div class="mb-3">
-                <label class="form-label">ID MERK</label>
+                <label class="form-label">Kode merk</label>
                 <select name='merek' class='form-control' value=<?php echo $data_barang['kode_merk'] ?>>
                     <?php $data_merek = findAllMerek();
                     foreach ($data_merek as $merek) {
@@ -66,7 +66,7 @@ include_once "../lib.php"; ?>
                 </select>
             </div>
             <div class="mb-3">
-                <label class="form-label">FITUR</label>
+                <label class="form-label">Fitur</label>
                 <div class="editor-container">
                     <textarea id="editor2" name="fitur" class="editor">
                         <?php echo $data_barang["fitur"] ?>
@@ -74,7 +74,7 @@ include_once "../lib.php"; ?>
                 </div>
             </div>
             <div class="mb-3">
-                <label class="form-label">INFO</label>
+                <label class="form-label">Info</label>
                 <div class="editor-container">
                     <textarea id="editor1" name="info_tambahan" class="editor">
                         <?php echo $data_barang["info_tambahan"] ?>
@@ -90,16 +90,20 @@ include_once "../lib.php"; ?>
                 </div>
             </div>
             <div class="mb-3">
-                <label class="form-label">HARGA AWAL</label>
-                <input type="number" class="form-control" name="harga_awal"
-                    value="<?php echo $data_barang["harga_awal"] ?>">
+                <label class="form-label">Harga awal</label>
+                <?php
+                $harga_awal = isset($data_barang["harga_awal"]) ? $data_barang["harga_awal"] : 0;
+                $harga = number_format($harga_awal, 0, ',', '.');
+                $diskon = number_format($data_barang['diskon'], 0, ',', '.');
+                ?>
+                <input type="text" class="form-control" name="harga_awal" value="<?php echo $harga ?>">
             </div>
             <div class="mb-3">
                 <label class="form-label">Diskon</label>
-                <input type="number" class="form-control" name="diskon" value="<?php echo $data_barang["diskon"] ?>">
+                <input type="text" class="form-control" name="diskon" value="<?php echo $diskon ?>">
             </div>
             <div class="mb-3">
-                <label class="form-label">JUMLAH PRODUK</label>
+                <label class="form-label">Jumlah stok</label>
                 <input type="number" class="form-control" name="jumlah_produk"
                     value="<?php echo $data_barang["jumlah_produk"] ?>">
             </div>
