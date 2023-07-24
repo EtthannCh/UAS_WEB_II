@@ -106,4 +106,10 @@ function findAllTransaksi()
     $query->execute();
     return $query->fetchAll();
 }
+
+function convertToRupiah($angka)
+{
+    $hasil = "Rp " . number_format($angka, 2, ',', '.');
+    return $hasil;
+}
 ?>
