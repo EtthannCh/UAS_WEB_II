@@ -2,8 +2,8 @@
 -- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Jul 24, 2023 at 11:30 AM
+-- Host: 127.0.0.1:3306
+-- Generation Time: Jul 24, 2023 at 12:01 PM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 7.4.30
 
@@ -382,8 +382,10 @@ CREATE TABLE `tbl_transaksi` (
 --
 
 INSERT INTO `tbl_transaksi` (`id_pengenal`, `kode_transaksi`, `id_user`, `nama_produk`, `jumlah_produk`, `harga`, `pengiriman`, `status_transaksi`, `tanggal`) VALUES
-(0, '', 1, 'Air Purifier AX60R 60?;Air Purifier AX40R 40m2        ', 4, 17154000, 'a', 'dikirim', NULL),
-(1, 'baca', 1, '11Kg Mesin Cuci dengan QuickDrive™, Add Wash™ dan Super Speed;21 kg Front Load Washer + Dryer dengan Ecobubble™, AI Wash, &amp', 1, 32814000, 'cargo', 'dikirim', NULL);
+(1, 'InnSi', 4, '\n            681L KulkasSide By Side Family HubTM            <input type=\"hidden\" id=\"kode_produk\" value=\"RS62T5F01B4/SE\">\n        ', 2, 60960000, 'hemat', 'Menunggu Konfirmasi', '2023-07-24'),
+(3, '', 1, 'Air Purifier AX60R 60?;Air Purifier AX40R 40m2        ', 4, 17154000, 'a', 'dikirim', NULL),
+(4, 'baca', 1, '11Kg Mesin Cuci dengan QuickDrive™, Add Wash™ dan Super Speed;21 kg Front Load Washer + Dryer dengan Ecobubble™, AI Wash, &amp', 1, 32814000, 'cargo', 'dikirim', NULL),
+(5, 'bxKsA', 4, '\n            TCL 43\" Q725 4K QLED Google Smart\nDolby Vision &amp; Atmos TV            <input type=\"hidden\" id=\"kode_produk\" value=\"TCL43Q72\">\n        ', 2, 10998000, 'hemat', 'Menunggu Konfirmasi', '2023-07-24');
 
 -- --------------------------------------------------------
 
@@ -494,7 +496,7 @@ ALTER TABLE `about`
 -- AUTO_INCREMENT for table `tbl_cart`
 --
 ALTER TABLE `tbl_cart`
-  MODIFY `id_abal` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_abal` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `tbl_catalog`
@@ -519,6 +521,12 @@ ALTER TABLE `tbl_data_user`
 --
 ALTER TABLE `tbl_kategori`
   MODIFY `id_kategori` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+
+--
+-- AUTO_INCREMENT for table `tbl_transaksi`
+--
+ALTER TABLE `tbl_transaksi`
+  MODIFY `id_pengenal` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `tbl_user`
