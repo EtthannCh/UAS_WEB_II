@@ -76,7 +76,7 @@ if(cekLogin()){
             $total = 0;
             foreach ($data as $value) {
                 $namaProduk = $value["nama_produk"];
-                $id_produk = $value["id_produk"];
+                $id_produk = $value["kode_produk"];
                 echo "<div class='barang'>";
                 echo "<div class='desc-barang'>";
                 echo "<img src='../Log in/Image/11Kg Mesin Cuci dengan QuickDrive.jpg' class='gmbr-produk' width='100px' height='100px'>";
