@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jul 24, 2023 at 12:01 PM
+-- Generation Time: Jul 24, 2023 at 04:19 PM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 7.4.30
 
@@ -54,7 +54,7 @@ INSERT INTO `about` (`id`, `gambar_profile`, `waktu_buka`, `intro`, `gambar_1`, 
 CREATE TABLE `tbl_cart` (
   `id_abal` int(11) NOT NULL,
   `id_user` int(11) NOT NULL,
-  `id_produk` int(11) NOT NULL,
+  `kode_produk` text NOT NULL,
   `nama_produk` varchar(300) NOT NULL,
   `qty_produk` int(11) NOT NULL,
   `harga_produk` int(50) NOT NULL,
@@ -62,6 +62,13 @@ CREATE TABLE `tbl_cart` (
   `total_harga` int(11) NOT NULL,
   `pengiriman` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_cart`
+--
+
+INSERT INTO `tbl_cart` (`id_abal`, `id_user`, `kode_produk`, `nama_produk`, `qty_produk`, `harga_produk`, `gambar_produk`, `total_harga`, `pengiriman`) VALUES
+(20, 4, 'RS62T5F01B4/SE', '\n            681L KulkasSide By Side Family HubTM            <input type=\"hidden\" id=\"kode_produk\" value=\"RS62T5F01B4/SE\">\n        ', 3, 30480000, '\n            681L KulkasSide By Side Family HubTM            <input type=\"hidden\" id=\"kode_produk\" value=\"RS62T5F01B4/SE\">\n        .jpg', 91440000, 'a');
 
 -- --------------------------------------------------------
 
@@ -240,7 +247,8 @@ INSERT INTO `tbl_merk` (`kode_merk`, `nama_merk`, `gambar`) VALUES
 ('PNC', 'Panasonic', 'panasonic-logo-1.png'),
 ('SHP', 'SHARP', 'sharp-logo-png-transparent.png'),
 ('SMG', 'SAMSUNG', 'samsung-logo-text-png-1.png'),
-('TCL', 'TCL', 'tcl.png');
+('TCL', 'TCL', 'tcl.png'),
+('tes1', 'tes', 'Sirkuit Hamilton.jpg');
 
 -- --------------------------------------------------------
 
@@ -383,8 +391,6 @@ CREATE TABLE `tbl_transaksi` (
 
 INSERT INTO `tbl_transaksi` (`id_pengenal`, `kode_transaksi`, `id_user`, `nama_produk`, `jumlah_produk`, `harga`, `pengiriman`, `status_transaksi`, `tanggal`) VALUES
 (1, 'InnSi', 4, '\n            681L KulkasSide By Side Family HubTM            <input type=\"hidden\" id=\"kode_produk\" value=\"RS62T5F01B4/SE\">\n        ', 2, 60960000, 'hemat', 'Menunggu Konfirmasi', '2023-07-24'),
-(3, '', 1, 'Air Purifier AX60R 60?;Air Purifier AX40R 40m2        ', 4, 17154000, 'a', 'dikirim', NULL),
-(4, 'baca', 1, '11Kg Mesin Cuci dengan QuickDrive™, Add Wash™ dan Super Speed;21 kg Front Load Washer + Dryer dengan Ecobubble™, AI Wash, &amp', 1, 32814000, 'cargo', 'dikirim', NULL),
 (5, 'bxKsA', 4, '\n            TCL 43\" Q725 4K QLED Google Smart\nDolby Vision &amp; Atmos TV            <input type=\"hidden\" id=\"kode_produk\" value=\"TCL43Q72\">\n        ', 2, 10998000, 'hemat', 'Menunggu Konfirmasi', '2023-07-24');
 
 -- --------------------------------------------------------
@@ -496,7 +502,7 @@ ALTER TABLE `about`
 -- AUTO_INCREMENT for table `tbl_cart`
 --
 ALTER TABLE `tbl_cart`
-  MODIFY `id_abal` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id_abal` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT for table `tbl_catalog`
